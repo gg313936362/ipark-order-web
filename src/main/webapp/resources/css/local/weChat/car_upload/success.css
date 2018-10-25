@@ -1,0 +1,57 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.back_img{
+    float: left;
+    width: 90%;
+    padding: 0 5%;
+    margin-top: 50px;
+}
+.text1{
+    float: left;
+    width: 100%;
+    font-size: 25px;
+    color: #00b2ac;
+    text-align: center;
+    line-height: 35px;
+    margin-top: -240px;
+}
+.text2{
+    float: left;
+    width: 100%;
+    font-size: 15px;
+    color: #636363;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 30px;
+}
+.bottom{
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+    font-size: 15px;
+    color: #636363;
+    text-align: center;
+    line-height: 25px;
+}
+.bottom span{
+    color: #00b2ac;
+}
+@media screen and (max-width: 340px){
+    .text1{
+        margin-top: -210px;
+    }
+    .text2{
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+}
+@media screen  and (min-width: 411px){
+    .text1{
+        margin-top: -265px;
+    }
+    .text2{
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,450 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.pay_top{
+    float: left;
+    width: 100%;
+    background: RGB(0, 178, 172);
+    color: #ffffff;
+}
+.pay_top_left{
+    float: left;
+    width: 49%;
+    border-right: #66d1cd 1px solid;
+}
+.pay_top_right{
+    float: left;
+    width: 50%;
+}
+.pay_top_left,.pay_top_right{
+    height: 60px;
+    margin-top: 35px;
+}
+.pay_top_top{
+    float: left;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+}
+.pay_top_top_big_div,.pay_top_top_small_div{
+    display: inline-block;
+    height: 40px;
+}
+.pay_top_top_big{
+    float: left;
+    line-height: 40px;
+    font-size: 35px;
+}
+.pay_top_top_small{
+    float: left;
+    line-height: 20px;
+    font-size: 15px;
+    margin-top: 17px;
+}
+.pay_top_top_bottom{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: RGB(240, 240, 240);
+    line-height: 18px;
+    font-size: 12px;
+    margin-top: 2px;
+}
+.pay_top_mid_div{
+    float: left;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.pay_top_mid{
+    display: inline-block;
+    background: #33c1bd;
+    text-align: center;
+    width: 70px;
+    line-height: 25px;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.pay_top_bottom{
+    float: left;
+    text-align: right;
+    width: 97%;
+    margin-right: 3%;
+    font-size: 12px;
+    line-height: 30px;
+}
+.pay_line{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid RGB(227, 227, 227);
+    background: #ffffff;
+}
+.pay_line_left{
+    float: left;
+    color: #212121;
+    margin-left: 3%;
+    line-height: 60px;
+    font-size: 15px;
+}
+.pay_line_right{
+    float: right;
+    color: #636363;
+    margin-right: 3%;
+    line-height: 60px;
+    font-size: 15px;
+}
+.pay_line_right .red{
+    color: RGB(255, 90, 90);
+}
+.pay_line_right .gray{
+    color: #999999;
+    font-size: 18px;
+}
+.coupon_arrow{
+    width: 8px;
+    height: 11px;
+    margin-left: 7px;
+}
+.pay_title{
+    float: left;
+    width: 97%;
+    padding-left: 3%;
+    line-height: 35px;
+    font-size: 15px;
+    border-bottom: 1px solid RGB(227, 227, 227);
+    background: RGB(240, 240, 240);
+    color: RGB(99, 99, 99);
+}
+.coupon_div{
+    display: none;
+}
+.coupon_back{
+    position: fixed;
+    background: #000000;
+    opacity: 0.5;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.coupon_content{
+    position: fixed;
+    background: #ffffff;
+    z-index: 2;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    border-radius: 6px;
+}
+.coupon_content_title{
+    float: left;
+    width: 100%;
+    line-height: 30px;
+    font-size: 18px;
+    color: #212121;
+    text-align: center;
+    margin-top: 10px;
+}
+.coupon_content_close{
+    float: right;
+    width: 14px;
+    margin-top: -40px;
+    padding: 12px;
+}
+.coupon_list{
+    float: left;
+    width: 100%;
+    border-top: RGB(244, 244, 244) 1px solid;
+    margin-top: 7px;
+    max-height: 320px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+.coupon_detail{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.coupon_detail_sel_div{
+    float: left;
+    width: 13%;
+    height: 82px;
+}
+.coupon_detail_sel{
+    float: left;
+    width: 20px;
+    padding-left: 50%;
+    margin-left: -10px;
+    margin-top: 31px;
+}
+.coupon_detail_div{
+    float: left;
+    width: 83%;
+    height: 82px;
+    background: url("../../../../resources/images/weChat/parking_pay/bg_discount_unused@3x.png") no-repeat;
+    background-size: contain;
+}
+.coupon_detail_div_top{
+    float: left;
+    width: 100%;
+    height: 55px;
+    display: block;
+    text-align: center;
+}
+.coupon_detail_div_top_yuan_div,.coupon_detail_div_top_amt_div{
+    display: inline-block;
+    height: 55px;
+}
+.coupon_detail_div_top_yuan{
+    float: left;
+    font-size: 18px;
+    line-height: 20px;
+    color: RGB(255, 251, 149);
+    margin-top: 30px;
+}
+.coupon_detail_div_top_amt{
+    float: left;
+    font-size: 50px;
+    line-height:50px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+.coupon_detail_div_top_name{
+    display: inline-block;
+    height: 55px;
+    width: 75px;
+}
+.coupon_detail_div_top_name_1{
+    float: left;
+    font-size: 12px;
+    width: 75px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 7px;
+    margin-bottom: 3px;
+}
+.coupon_detail_div_top_name_2{
+    float: left;
+    font-size: 18px;
+    width: 75px;
+    line-height: 20px;
+    color: RGB(255, 251, 149);
+    text-align: left;
+}
+.coupon_detail_div_bottom{
+    float: left;
+    width: 97%;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: right;
+    color: #ffffff;
+}
+.pay_button_div_blank{
+    float: left;
+    width: 100%;
+    height: 65px;
+}
+.act_img{
+    position: fixed;
+    width: 130px;
+    right: 0px;
+    bottom: 80px;
+    z-index: 1;
+}
+.pay_button_div{
+    position: fixed;
+    width: 100%;
+    height: 58px;
+    border-top: RGB(227, 227, 227) solid 1px;
+    border-bottom: RGB(227, 227, 227) solid 1px;
+    background: #ffffff;
+    bottom: 0px;
+}
+.pay_button_amt{
+    float: left;
+    line-height: 58px;
+    font-size: 16px;
+    color: #212121;
+    margin-left: 3%;
+}
+.pay_button_amt span{
+    color: RGB(255, 90, 90);
+}
+.pay_button{
+    float: right;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    background: RGB(243, 189, 71);
+    text-align: center;
+    margin-right: 3%;
+    border-radius: 20px;
+    margin-top: 9px;
+}
+.pay_way_line{
+    float: left;
+    width: 94%;
+    height: 60px;
+    padding: 0 3%;
+    background: #ffffff;
+    border-bottom: 1px RGB(227, 227, 227) solid;
+}
+.pay_way_line_img{
+    float: left;
+    width: 36px;
+    margin-top: 12px;
+}
+.pay_way_line div{
+    float: left;
+    line-height: 60px;
+    font-size: 15px;
+    color: RGB(99, 99, 99);
+    margin-left: 10px;
+}
+.pay_way_line div span{
+    color: RGB(255, 90, 90);
+}
+.pay_way_line_seled_img{
+    float: right;
+    width: 16px;
+    margin: 22px 0 0 0;
+}
+.net_div{
+    display: none;
+}
+.net_back{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #000000;
+    opacity: 0.6;
+}
+.net_content{
+    position: fixed;
+    width: 270px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 6px;
+    z-index: 3;
+    overflow: hidden;
+}
+.net_text1{
+    float: left;
+    width: 100%;
+    font-size: 15px;
+    color: #212121;
+    line-height: 24px;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.net_text2{
+    float: left;
+    width: 100%;
+    font-size: 15px;
+    color: #00b2ac;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.net_text2 span{
+    text-decoration: underline;
+}
+.net_button_div{
+    float: left;
+    width: 100%;
+    background: #00b2ac;
+}
+.net_button{
+    float: left;
+    width: 100px;
+    height: 40px;
+    background: RGB(237, 237, 237);
+    color: #212121;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px 85px 10px 85px;
+}
+.server_tel{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 4px;
+    color: #999999;
+}
+.grab_div{
+    /*display: none;*/
+}
+.grab_back{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #000000;
+    opacity: 0.6;
+}
+.grab_content{
+    position: fixed;
+    width: 270px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 6px;
+    z-index: 3;
+    overflow: hidden;
+}
+.grab_content_close{
+    float: right;
+    width: 12px;
+    padding: 10px 10px 3px 10px;
+}
+.grab_content_title{
+    float: left;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    font-size: 15px;
+    color: #333333;
+    line-height: 25px;
+    text-align: center;
+}
+.grab_content_title span{
+    color: RGB(255, 97, 71);
+    font-size: 25px;
+}
+.grab_content_text{
+    float: left;
+    width: 84%;
+    margin: 5px 8% 10px 8%;
+    font-size: 13px;
+    color: #999999;
+    line-height: 25px;
+}
+.grab_content_button{
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #00b2ac;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}

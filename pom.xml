@@ -1,0 +1,265 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.ipark.iparkweb</groupId>
+	<artifactId>ipark-web</artifactId>
+	<version>0.0.1</version>
+	<packaging>war</packaging>
+	<name>ipark-web</name>
+	<description>Used for park client terminal user to manager sth.</description>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+		
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.13</version>
+		</dependency>
+		
+		<dependency>
+		<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.13</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>19.0</version>
+		</dependency> 
+
+		
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.7</version>
+		</dependency>
+		<!-- Alibaba End -->
+
+		<!-- Servlet For Compile Not Package Start -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- Servlet End -->
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+
+		<!-- Spring Embeeded Begin -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.2.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc-portlet</artifactId>
+			<version>4.2.1.RELEASE</version>
+		</dependency>
+		<!-- Spring Embeeded End -->
+		
+		<dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.3</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-web</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.21</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.8.8</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>ROOT</finalName>
+			<plugins>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+						<encoding>UTF-8</encoding>
+						<compilerArguments>
+							<verbose/>
+							<bootclasspath>${java.home}\lib\rt.jar;;${java.home}/lib/jce.jar</bootclasspath>
+						</compilerArguments>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>tomcat-maven-plugin</artifactId>
+					<version>1.1</version>
+					<configuration>
+						<path>/</path>
+						<port>80</port>
+						<uriEncoding>UTF-8</uriEncoding>
+						<server>tomcat7</server>
+					</configuration>
+				</plugin>
+			</plugins>
+	</build>
+
+	<profiles>
+		<profile> <!-- mvn -P dev package -->
+			<id>dev</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<properties>
+				<build.profile.id>dev</build.profile.id>
+				<LOG_HOME>/opt/logs/ipark-parkweb</LOG_HOME>
+				<DETAIL_LOG_COUNT>200</DETAIL_LOG_COUNT>
+				<ERROR_LOG_COUNT>50</ERROR_LOG_COUNT>
+				<DETAIL_LOG_NAME>ipark-parkweb-info</DETAIL_LOG_NAME>
+				<ERROR_LOG_NAME>ipark-parkweb-error</ERROR_LOG_NAME>
+			</properties>
+			<build>
+				<filters><!-- 要使用的文件 -->
+					<filter>profiles/${build.profile.id}/conf.properties</filter>
+				</filters>
+				<resources>
+					<resource>
+						<filtering>true</filtering>
+						<directory>src/main/resources</directory>
+						<includes>
+							<include>conf/conf.properties</include>
+							<include>log4j2.xml</include>
+						</includes>
+					</resource>
+					<resource>
+						<filtering>false</filtering>
+						<directory>src/main/resources</directory>
+					</resource>
+				</resources>
+			</build>
+		</profile>
+
+		<profile> <!-- mvn -P test package -->
+			<id>test</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<build.profile.id>test</build.profile.id>
+				<LOG_HOME>/opt/logs/ipark-parkweb</LOG_HOME>
+				<DETAIL_LOG_COUNT>200</DETAIL_LOG_COUNT>
+				<ERROR_LOG_COUNT>50</ERROR_LOG_COUNT>
+				<DETAIL_LOG_NAME>ipark-parkweb-info</DETAIL_LOG_NAME>
+				<ERROR_LOG_NAME>ipark-parkweb-error</ERROR_LOG_NAME>
+			</properties>
+			<build>
+				<filters><!-- 要使用的文件 -->
+					<filter>profiles/${build.profile.id}/conf.properties</filter>
+				</filters>
+				<resources><!-- 要替换的目标路径和文件 -->
+					<resource>
+						<filtering>true</filtering>
+						<directory>src/main/resources</directory>
+						<includes>
+							<include>conf/conf.properties</include>
+							<include>log4j2.xml</include>
+						</includes>
+					</resource>
+					<resource>
+						<filtering>false</filtering>
+						<directory>src/main/resources</directory>
+					</resource>
+				</resources>
+			</build>
+		</profile>
+
+		<profile> <!-- mvn -P pro package -->
+			<id>pro</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<properties>
+				<build.profile.id>pro</build.profile.id>
+				<LOG_HOME>/opt/logs/ipark-parkweb</LOG_HOME>
+				<DETAIL_LOG_COUNT>1000</DETAIL_LOG_COUNT>
+				<ERROR_LOG_COUNT>100</ERROR_LOG_COUNT>
+				<DETAIL_LOG_NAME>ipark-parkweb-info</DETAIL_LOG_NAME>
+				<ERROR_LOG_NAME>ipark-parkweb-error</ERROR_LOG_NAME>
+			</properties>
+			<build>
+				<filters><!-- 要使用的文件 -->
+					<filter>profiles/${build.profile.id}/conf.properties</filter>
+				</filters>
+				<resources><!-- 要替换的目标路径和文件 -->
+					<resource>
+						<filtering>true</filtering>
+						<directory>src/main/resources</directory>
+						<includes>
+							<include>conf/conf.properties</include>
+							<include>log4j2.xml</include>
+						</includes>
+					</resource>
+					<resource>
+						<filtering>false</filtering>
+						<directory>src/main/resources</directory>
+					</resource>
+				</resources>
+			</build>
+		</profile>
+	</profiles>
+</project>

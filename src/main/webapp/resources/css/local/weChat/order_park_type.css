@@ -1,0 +1,161 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.line{
+    float: left;
+    width: 94%;
+    padding: 0 3%;
+    background: #ffffff;
+    border-top: 1px solid RGB(227, 227, 227);
+}
+.line_top{
+    margin-top: 10px;
+}
+.line_left{
+    float: left;
+    line-height: 59px;
+    color: #636363;
+    font-size: 15px;
+}
+.line img{
+    float: right;
+    width: 8px;
+    margin: 24px 0 0 8px;
+}
+.line_right{
+    float: right;
+    line-height: 59px;
+    color: #636363;
+    font-size: 15px;
+}
+.line_right_blue{
+    color: #00b2ac;
+}
+.line_no_car{
+    float: left;
+    width: 100%;
+    line-height: 59px;
+    color: #00b2ac;
+    font-size: 15px;
+    text-align: center;
+}
+#car_num_sel{
+    display: none;
+}
+.car_num_sel_back{
+    position: absolute;
+    background: #000000;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.car_num_sel_div{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.car_num_sel_button_div{
+    float: left;
+    width: 96%;
+    margin: 0 2%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.car_num_sel_button_1{
+    float: left;
+    width: 100%;
+    background: RGB(249, 249, 249);
+    line-height: 35px;
+    font-size: 13px;
+    color: #636363;
+    text-align: center;
+}
+.car_num_sel_button_2{
+    float: left;
+    width: 100%;
+    background: RGB(249, 249, 249);
+    line-height: 50px;
+    font-size: 17px;
+    color: RGB(0, 122, 255);
+    text-align: center;
+    border-top: RGB(218, 218, 222) 1px solid;
+}
+.car_num_sel_button_3{
+    float: left;
+    width: 96%;
+    margin: 10px 2%;
+    background: RGB(249, 249, 249);
+    line-height: 50px;
+    font-size: 17px;
+    color: RGB(0, 122, 255);
+    text-align: center;
+    border-radius: 10px;
+}
+#hiddenDate{
+    float: left;
+    width: 0px;
+    height: 0px;
+    margin-top: -10px;
+}
+.div_title{
+    float: left;
+    width: 94%;
+    padding: 0 3%;
+    height: 35px;
+    line-height: 35px;
+    background: RGB(240, 240, 240);
+    font-size: 16px;
+    color: #212121;
+    border-top: 1px solid RGB(227, 227, 227);
+    border-bottom: 1px solid RGB(227, 227, 227);
+}
+.order_div_wrapper{
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.order_div{
+    float: left;
+    width: 94%;
+    padding: 0 3%;
+    background: #ffffff;
+    border-bottom: 1px solid RGB(227, 227, 227);
+}
+.order_title{
+    float: left;
+    line-height: 36px;
+    font-size: 16px;
+    color: #212121;
+    margin: 5px 0;
+}
+.order_button{
+    float: right;
+    height: 36px;
+    line-height: 36px;
+    background: RGB(0, 178, 172);
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    width: 85px;
+    margin: 5px 0;
+    border-radius: 18px;
+}
+.order_price{
+    float: left;
+    width: 100%;
+    line-height: 25px;
+    font-size: 15px;
+    color: #636363;
+}
+.order_price span{
+    color: RGB(255, 90, 90);
+}
+.order_date{
+    float: left;
+    width: 100%;
+    line-height: 24px;
+    font-size: 14px;
+    color: #636363;
+    margin-bottom: 10px;
+}

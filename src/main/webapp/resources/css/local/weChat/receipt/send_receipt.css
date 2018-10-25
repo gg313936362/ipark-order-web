@@ -1,0 +1,50 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.email_div{
+    float: left;
+    width: 94%;
+    padding: 0 3%;
+    border-top: RGB(227, 227, 227) solid 1px;
+    border-bottom: RGB(227, 227, 227) solid 1px;
+    margin-top: 5px;
+    background: #ffffff;
+}
+.email_div div{
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    color: #212121;
+    font-size: 16px;
+}
+.email_div input{
+    float: left;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    border: 0px;
+    font-size: 16px;
+    color: #212121;
+    margin: 15px 0 0 5px;
+}
+.email_tip{
+    float: left;
+    width: 94%;
+    padding: 0 3%;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+    margin-top: 10px;
+}
+.email_button{
+    float: left;
+    width: 50%;
+    margin: 40px 0 0 25%;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    background: RGB(0, 178, 172);
+    font-size: 16px;
+    text-align: center;
+    border-radius: 20px;
+}

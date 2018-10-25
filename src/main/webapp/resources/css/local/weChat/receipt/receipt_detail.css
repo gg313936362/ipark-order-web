@@ -1,0 +1,117 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.detail_div{
+    float: left;
+    width: 94%;
+    padding: 0 3% 12px 3%;
+    margin-top: 5px;
+    border-top: RGB(227, 227, 227) solid 1px;
+    border-bottom: RGB(227, 227, 227) solid 1px;
+    background: #ffffff;
+}
+.detail_title{
+    float: left;
+    width: 50%;
+    color: #212121;
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    margin: 12px 0 0 0;
+}
+.detail_text{
+    float: left;
+    width: 100%;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    margin: 5px 0 0 0;
+}
+.detail_button{
+    float: right;
+    padding: 0 12px;
+    line-height: 28px;
+    height: 28px;
+    border-radius: 14px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    background: RGB(0, 178, 172);
+    margin-top: 10px;
+}
+.record_div{
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    border-top: RGB(227, 227, 227) solid 1px;
+    border-bottom: RGB(227, 227, 227) solid 1px;
+    background: #ffffff;
+}
+.record_title{
+    float: left;
+    width: 94%;
+    padding: 0 3%;
+    color: #212121;
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    margin: 12px 0 0 0;
+}
+.record_text1{
+    float: left;
+    width: 94%;
+    padding: 0 3%;
+    height: 24px;
+    margin: 5px 0 5px 0px;
+}
+.record_text_title{
+    float: left;
+    line-height: 24px;
+    font-size: 14px;
+    color: #666666;
+}
+.record_text_type{
+    float: right;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 8px;
+    background: RGB(0, 178, 172);
+    color: #ffffff;
+    border-radius: 12px;
+}
+.record_text2{
+    float: left;
+    width: 94%;
+    padding: 0 3%;
+    height: 24px;
+    margin-top: 5px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #636363;
+}
+.record_text_time_left{
+    float: left;
+}
+.record_text_time_right{
+    float: right;
+}
+.record_text3{
+    float: left;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 44px;
+    margin-top: 10px;
+    border-top: RGB(227, 227, 227) solid 1px;
+    font-size: 14px;
+    line-height: 44px;
+    color: #636363;
+}
+.record_text_left{
+    float: left;
+}
+.record_text3 div span{
+    color: RGB(255, 90, 90);
+}

@@ -1,0 +1,68 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.unpay_div{
+    float: left;
+    width: 94%;
+    padding: 0 3%;
+    margin-top: 5px;
+    border-top: RGB(227, 227, 227) solid 1px;
+    border-bottom: RGB(227, 227, 227) solid 1px;
+    background: #ffffff;
+}
+.unpay_text1{
+    float: left;
+    width: 100%;
+    height: 25px;
+    margin: 15px 0 5px 0px;
+}
+.unpay_text_title{
+    float: left;
+    line-height: 25px;
+    font-size: 15px;
+    color: #212121;
+}
+.unpay_text_type{
+    float: right;
+    font-size: 15px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 8px;
+    background: RGB(0, 178, 172);
+    color: #ffffff;
+    border-radius: 25px;
+}
+.orange{
+    background: RGB(243, 189, 71);
+}
+.unpay_text2{
+    float: left;
+    width: 100%;
+    height: 25px;
+    margin-top: 5px;
+    line-height: 25px;
+    font-size: 15px;
+    color: #636363;
+}
+.unpay_text_time_left{
+    float: left;
+}
+.unpay_text_time_right{
+    float: right;
+}
+.unpay_text3{
+    float: left;
+    width: 100%;
+    height: 44px;
+    margin-top: 10px;
+    border-top: RGB(227, 227, 227) solid 1px;
+}
+.unpay_text_amt{
+    float: left;
+    font-size: 15px;
+    line-height: 44px;
+    color: #636363;
+}
+.unpay_text_amt span{
+    color: RGB(255, 90, 90);
+}

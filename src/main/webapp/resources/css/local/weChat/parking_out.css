@@ -1,0 +1,146 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.pay_top{
+    float: left;
+    width: 100%;
+    background: RGB(0, 178, 172);
+    color: #ffffff;
+}
+.pay_top_left{
+    float: left;
+    width: 49%;
+    border-right: #66d1cd 1px solid;
+}
+.pay_top_right{
+    float: left;
+    width: 50%;
+}
+.pay_top_left,.pay_top_right{
+    height: 60px;
+    margin-top: 35px;
+}
+.pay_top_top{
+    float: left;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 40px;
+}
+.pay_top_top_big_div,.pay_top_top_small_div{
+    display: inline-block;
+    height: 40px;
+}
+.pay_top_top_big{
+    float: left;
+    line-height: 40px;
+    font-size: 35px;
+}
+.pay_top_top_small{
+    float: left;
+    line-height: 20px;
+    font-size: 15px;
+    margin-top: 17px;
+}
+.pay_top_top_bottom{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: RGB(240, 240, 240);
+    line-height: 18px;
+    font-size: 12px;
+    margin-top: 2px;
+}
+.pay_top_mid_div{
+    float: left;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.pay_top_mid{
+    display: inline-block;
+    background: #33c1bd;
+    text-align: center;
+    width: 70px;
+    line-height: 25px;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.pay_top_bottom{
+    float: left;
+    text-align: right;
+    width: 97%;
+    margin-right: 3%;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}
+.pay_line{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid RGB(227, 227, 227);
+    background: #ffffff;
+}
+.pay_line_left{
+    float: left;
+    color: #212121;
+    margin-left: 3%;
+    line-height: 60px;
+    font-size: 15px;
+}
+.pay_line_right{
+    float: right;
+    color: #636363;
+    margin-right: 3%;
+    line-height: 60px;
+    font-size: 15px;
+}
+.pay_line_right .red{
+    color: RGB(255, 90, 90);
+}
+.pay_line_right .blue{
+    color: RGB(0, 178, 172);
+}
+.pay_line_right .gray{
+    color: #999999;
+    font-size: 18px;
+}
+.pay_line_right_div{
+    float: right;
+    margin-right: 3%;
+    height: 60px;
+    width: 50%;
+}
+.pay_line_right_top{
+    float: right;
+    width: 100%;
+    line-height: 24px;
+    margin-top: 8px;
+    margin-right: 0%;
+    text-align: right;
+}
+.pay_line_right_bottom{
+    float: right;
+    width: 100%;
+    color: #999999;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: right;
+}
+.pay_title{
+    float: left;
+    width: 97%;
+    padding-left: 3%;
+    line-height: 35px;
+    font-size: 15px;
+    border-bottom: 1px solid RGB(227, 227, 227);
+    background: RGB(240, 240, 240);
+    color: RGB(99, 99, 99);
+}
+.coupon_arrow{
+    float: right;
+    width: 8px;
+    margin-top: 24.5px;
+    margin-left: 7px;
+}

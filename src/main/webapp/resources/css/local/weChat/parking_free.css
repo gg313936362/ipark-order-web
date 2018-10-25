@@ -1,0 +1,251 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.pay_top{
+    float: left;
+    width: 100%;
+    background: RGB(0, 178, 172);
+    color: #ffffff;
+}
+.pay_top_left{
+    float: left;
+    width: 49%;
+}
+.pay_top_right{
+    float: left;
+    width: 50%;
+}
+.pay_top_left,.pay_top_right{
+    height: 47px;
+    margin-top: 35px;
+}
+.pay_top_top{
+    float: left;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 27px;
+}
+.pay_top_top_big_div,.pay_top_top_small_div{
+    display: inline-block;
+    height: 27px;
+}
+.pay_top_top_big{
+    float: left;
+    line-height: 27px;
+    font-size: 22px;
+}
+.pay_top_top_small{
+    float: left;
+    line-height: 20px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.pay_top_top_bottom{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: RGB(240, 240, 240);
+    line-height: 18px;
+    font-size: 12px;
+    margin-top: 2px;
+}
+.pay_top_mid_div{
+    float: left;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.pay_top_mid{
+    display: inline-block;
+    text-align: center;
+    margin-top: 35px;
+}
+.pay_top_mid img{
+    float: left;
+    width: 50px;
+}
+.pay_top_mid div{
+    float: left;
+    line-height: 50px;
+    font-size: 24px;
+    margin: 0px 0 0 5px;
+}
+.pay_top_bottom{
+    float: left;
+    text-align: right;
+    width: 97%;
+    margin-right: 3%;
+    font-size: 12px;
+    height: 15px;
+}
+.pay_line{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid RGB(227, 227, 227);
+    background: #ffffff;
+}
+.pay_line_left{
+    float: left;
+    color: #212121;
+    margin-left: 3%;
+    line-height: 60px;
+    font-size: 15px;
+}
+.pay_line_right{
+    float: right;
+    color: #636363;
+    margin-right: 3%;
+    line-height: 60px;
+    font-size: 15px;
+}
+.pay_line_right .red{
+    color: RGB(255, 90, 90);
+}
+.pay_line_right .blue{
+    color: RGB(0, 178, 172);
+}
+.pay_line_right .gray{
+    color: #999999;
+    font-size: 18px;
+}
+.pay_title{
+    float: left;
+    width: 97%;
+    padding-left: 3%;
+    line-height: 35px;
+    font-size: 15px;
+    border-bottom: 1px solid RGB(227, 227, 227);
+    background: RGB(240, 240, 240);
+    color: RGB(99, 99, 99);
+}
+.coupon_arrow{
+    float: right;
+    width: 8px;
+    margin-top: 24.5px;
+    margin-left: 7px;
+}
+.hongbao_img{
+    position: fixed;
+    width: 80px;
+    right: 0px;
+    bottom: 80px;
+}
+.shareRemind{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.8;
+    display: none;
+    z-index: 4;
+}
+.shareRemind img{
+    float: right;
+    padding: 10px 30px 0 0;
+}
+.share_back{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #000000;
+    opacity: 0.6;
+}
+.share_content{
+    position: fixed;
+    width: 270px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 6px;
+    z-index: 3;
+    overflow: hidden;
+}
+.share_top{
+    float: left;
+    width: 100%;
+    background: #00b2ac;
+    height: 53px;
+}
+.share_top img{
+    float: right;
+    width: 16px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.share_top div{
+    float: right;
+    width: 218px;
+    line-height: 53px;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+.share_text{
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    color: #212121;
+    text-align: center;
+    margin-top: 10px;
+}
+.share_text span{
+    color: #ff6147;
+    font-size: 24px;
+}
+.share_rate{
+    float: left;
+    width: 240px;
+    margin: 20px 15px 10px 15px
+}
+.share_rate_round{
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    color: RGB(201, 181, 175);
+    background: RGB(240, 240, 240);
+    border-radius: 20px;
+}
+.share_rate_line{
+    float: left;
+    width: 10px;
+    height: 4px;
+    background: RGB(240, 240, 240);
+    margin-top: 18px;
+}
+.share_rate_sel{
+    color: #ffffff;
+    background: #00b2ac;
+}
+.share_button_div{
+    float: left;
+    width: 100%;
+}
+.share_button{
+    float: left;
+    width: 120px;
+    height: 40px;
+    background: #00b2ac;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px 75px 10px 75px;
+}
+.server_tel{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    color: #999999;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>map测试</title>
+</head>
+<link rel="stylesheet" href="../resources/css/lib/pull_refresh/reset.css">
+<link rel="stylesheet" href="../resources/css/lib/pull_refresh/pull_to_refresh.css">
+
+<script type="text/javascript" src="../resources/js/lib/pull_refresh/iscroll.js"></script>
+<script type="text/javascript" src="../resources/js/lib/pull_refresh/pull_to_refresh.js"></script>
+<script type="text/javascript" src="../resources/js/lib/pull_refresh/colorful.js"></script>
+
+<body>
+<div id="wrapper" style="overflow: hidden;">
+  <div class="scroller">
+    <ul>
+      <li style="background-color: rgb(83, 119, 122);">async row 11</li>
+      <li style="background-color: rgb(105, 210, 231);">async row 10</li>
+      <li style="background-color: rgb(250, 105, 0);">async row 9</li>
+      <li style="background-color: rgb(192, 41, 66);">async row 8</li>
+      <li style="background-color: rgb(243, 134, 48);">async row 7</li>
+      <li style="background-color: rgb(105, 210, 231);">async row 6</li>
+      <li style="background-color: rgb(224, 228, 204);">async row 5</li>
+      <li style="background-color: rgb(250, 105, 0);">async row 4</li>
+      <li style="background-color: rgb(105, 210, 231);">async row 3</li>
+      <li style="background-color: rgb(83, 119, 122);">async row 2</li>
+      <li style="background-color: rgb(167, 219, 216);">async row 1</li>
+    </ul>
+  </div>
+</div>
+</body>
+<script>
+  refresher.init({
+    id: "wrapper",
+    pullDownAction: Refresh,
+    pullUpAction: Load
+  });
+  var generatedCount = 0;
+  function Refresh() {
+    setTimeout(function () {	// <-- Simulate network congestion, remove setTimeout from production!
+      var el, li, i;
+      el = document.querySelector("#wrapper ul");
+      el.innerHTML = '';
+      for (i = 0; i < 11; i++) {
+        li = document.createElement('li');
+        li.appendChild(document.createTextNode('async row ' + (++generatedCount)));
+        el.insertBefore(li, el.childNodes[0]);
+      }
+      wrapper.refresh();/****remember to refresh after  action completed！ ---yourId.refresh(); ----| ****/
+      for (var i = 0; i < document.querySelectorAll("#wrapper ul li").length; i++) {
+        document.querySelectorAll("#wrapper ul li")[i].colorfulBg();
+      }
+    }, 1000);
+
+  }
+
+  function Load() {
+    setTimeout(function () {// <-- Simulate network congestion, remove setTimeout from production!
+      var el, li, i;
+      el = document.querySelector("#wrapper ul");
+      for (i = 0; i < 2; i++) {
+        li = document.createElement('li');
+        li.appendChild(document.createTextNode('async row ' + (++generatedCount)));
+        el.appendChild(li, el.childNodes[0]);
+      }
+      wrapper.refresh();/****remember to refresh after action completed！！！   ---id.refresh(); --- ****/
+      for (var i = 0; i < document.querySelectorAll("#wrapper ul li").length; i++) {
+        document.querySelectorAll("#wrapper ul li")[i].colorfulBg();
+      }
+    }, 1000);
+  }
+</script>
+</html>

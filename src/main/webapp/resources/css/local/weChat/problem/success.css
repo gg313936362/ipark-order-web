@@ -1,0 +1,40 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.back_img{
+    float: left;
+    width: 90%;
+    padding: 0 5%;
+    margin-top: 50px;
+}
+.text{
+    float: left;
+    width: 100%;
+    font-size: 15px;
+    color: #00b2ac;
+    text-align: center;
+    line-height: 25px;
+    margin-top: -240px;
+}
+.bottom{
+    width: 100%;
+    position: fixed;
+    bottom: 20px;
+    font-size: 15px;
+    color: #636363;
+    text-align: center;
+    line-height: 25px;
+}
+.bottom span{
+    color: #00b2ac;
+}
+@media screen and (max-width: 340px){
+    .text{
+        margin-top: -210px;
+    }
+}
+@media screen  and (min-width: 411px){
+    .text{
+        margin-top: -265px;
+    }
+}

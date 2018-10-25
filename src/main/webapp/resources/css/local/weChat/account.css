@@ -1,0 +1,110 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.content{
+    float: left;
+    width: 100%;
+    background: #ffffff;
+}
+.account_amt{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: RGB(250, 90, 90);
+    line-height: 40px;
+    margin-top: 20px;
+}
+.account_title{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+    line-height: 20px;
+    margin-top: 2px;
+}
+#recharge_amt_input{
+    float: left;
+    width: 82%;
+    padding: 5px 5%;
+    margin: 22px 4% 0 4%;
+    background: RGB(248, 248, 248);
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    border: 1px solid RGB(227, 227, 227);
+    font-size: 14px;
+}
+#recharge_amt_input::-webkit-input-placeholder {
+    color: #999999;
+}
+.recharge_amt_content{
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.recharge_amt_div{
+    float: left;
+    width: 20%;
+    margin-left:3.6%;
+    height: 60px;
+    background: RGB(248, 248, 248);
+    border-radius: 6px;
+    border: 1px solid RGB(0, 178, 172);
+    line-height: 60px;
+    text-align: center;
+    color: #636363;
+    font-size: 16px;
+}
+.recharge_amt_div_sel{
+    background: RGB(0, 178, 172);
+    color: #ffffff;
+}
+.pay_way_title{
+    float: left;
+    width: 94%;
+    padding: 0 3%;
+    line-height: 40px;
+    font-size: 16px;
+    background: RGB(240, 240, 240);
+    color: #636363;
+    border-top: 1px RGB(227, 227, 227) solid;
+}
+.pay_way{
+    float: left;
+    width: 94%;
+    padding: 15px 3%;
+    background: #ffffff;
+    border-top: 1px RGB(227, 227, 227) solid;
+    border-bottom: 1px RGB(227, 227, 227) solid;
+}
+.pay_way_ali_img{
+    float: left;
+    width: 36px;
+}
+.pay_way div{
+    float: left;
+    line-height: 36px;
+    font-size: 15px;
+    color: #636363;
+    margin-left: 10px;
+}
+.pay_way_seled_img{
+    float: right;
+    width: 16px;
+    margin: 10px 0 0 0;
+}
+.pay_way_button_div{
+    float: left;
+    height: 40px;
+    border-radius: 20px;
+    color: #ffffff;
+    width: 92%;
+    margin: 30px 4%;
+    background: RGB(243, 189, 71);
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+}

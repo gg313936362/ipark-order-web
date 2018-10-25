@@ -1,0 +1,74 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.content_1{
+    float: left;
+    width: 94%;
+    padding: 0px 3% 10px 3%;
+    background: #ffffff;
+    margin-top: 10px;
+}
+.content_1_car_num{
+    float: left;
+    width: 100%;
+    line-height: 45px;
+    font-size: 15px;
+    color: #212121;
+    border-bottom: RGB(231, 231, 231) solid 1px;
+    margin-bottom: 10px;
+}
+.content_1_car_num span{
+    float: left;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: RGB(27, 178, 171);
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.content_1_text{
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    line-height: 30px;
+}
+.content_1_text_left{
+    float: left;
+    color: RGB(99, 99, 99);
+}
+.content_1_text_right{
+    float: right;
+    text-align: right;
+    color: RGB(33, 33, 33);
+}
+.content_2{
+    float: left;
+    width: 94%;
+    padding: 0 3%;
+    font-size: 15px;
+    line-height: 45px;
+    color: #212121;
+}
+.content_3{
+    float: left;
+    width: 94%;
+    padding: 0px 3% 0px 3%;
+    background: #ffffff;
+}
+.content_3_text{
+    float: left;
+    width: 100%;
+    line-height: 60px;
+    font-size: 15px;
+    color: #636363;
+    border-bottom: RGB(231, 231, 231) solid 1px;
+}
+.content_3_text span{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    margin-top: 26px;
+    margin-right: 15px;
+    border: 1px #636363 solid;
+}

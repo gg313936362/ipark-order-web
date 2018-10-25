@@ -1,0 +1,53 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.pay_list{
+    float: left;
+    width: 100%;
+    border-top: RGB(227, 227, 227) solid 1px;
+    border-bottom: RGB(227, 227, 227) solid 1px;
+    background: #ffffff;
+    margin-top: 10px;
+}
+.pay_list_top{
+    float: left;
+    width: 100%;
+    border-bottom: RGB(227, 227, 227) solid 1px;
+}
+.pay_list_top span{
+    float: left;
+    width: 6px;
+    height: 6px;
+    background: RGB(0, 178, 172);
+    border-radius: 3px;
+    margin: 17px 10px 0 3%;
+}
+.pay_list_top_left{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #212121;
+}
+.pay_list_top_right{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: RGB(0, 178, 172);
+    margin-right: 3%;
+}
+.pay_list_bottom{
+    float: left;
+    width: 100%;
+    padding: 7px 0;
+}
+.pay_list_bottom div{
+    float: left;
+    width: 94%;
+    margin: 0 3%;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    color: #999999;
+}

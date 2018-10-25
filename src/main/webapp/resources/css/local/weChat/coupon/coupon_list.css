@@ -1,0 +1,153 @@
+body{
+    background: RGB(240, 240, 240);
+}
+.scroller li{
+    width: 94%;
+    margin: 0px 3% 10px 3%;
+    padding: 0px;
+    height: 115px;
+    background: url('../../../../../resources/images/weChat/coupon/coupon_list/bg_discount_unused@3x.png') no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.scroller .gray{
+    background: url('../../../../../resources/images/weChat/coupon/coupon_list/bg_discount_used@3x.png') no-repeat;
+    background-size: 100% 100%;
+}
+.scroller .rule{
+    margin: 0px 3% 0px 3%;
+    height: 30px;
+    min-height: 30px;
+    background: none;
+}
+.scroller .rule div{
+    float: right;
+    color: RGB(161, 161, 161);
+    font-size: 12px;
+    line-height: 30px;
+    text-align: right;
+}
+.scroller .rule img{
+    float: right;
+    width: 12px;
+    margin: 9px 4px 0 0;
+}
+.status_img{
+    float: left;
+    width: 60px;
+}
+.detail{
+    float: left;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+}
+.scroller .gray .detail{
+    margin-top: -60px;
+}
+.detail_text{
+    float: right;
+    width: 155px;
+    height: 100%;
+    margin-right: 10px;
+}
+.detail_name{
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 22px;
+}
+.detail_name_end{
+    float: left;
+    font-size: 25px;
+    line-height: 30px;
+    color: #fffb95;
+    margin-top: 10px;
+}
+.scroller .gray .detail_name_end{
+    color: #999999;
+}
+.detail_end_date{
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 7px;
+}
+.detail_amt{
+    float: right;
+    font-size: 50px;
+    line-height: 60px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+.yuan_img{
+    float: right;
+    width: 18px;
+    margin-right: 5px;
+    margin-top: 55px;
+}
+.scroller .coupon_none{
+    background: none;
+}
+.coupon_none_img{
+    float: left;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+}
+.coupon_none_img img{
+    width: 50%;
+    display: inline-block;
+}
+.coupon_none_text{
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    color: RGB(153, 153, 153);
+    text-align: center;
+    margin-top: 20px;
+}
+@media screen and (max-width: 340px){
+    .scroller li{
+        height: 96px;
+    }
+    .status_img{
+        width: 50px;
+    }
+    .scroller .gray .detail{
+        margin-top: -50px;
+    }
+    .detail_text{
+        width: 135px;
+    }
+    .detail_name{
+        font-size: 12px;
+        margin-top: 17px;
+    }
+    .detail_name_end{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .detail_end_date{
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    .detail_amt{
+        font-size: 40px;
+        margin-top: 22px;
+        margin-right: 6px;
+    }
+    .yuan_img{
+        width: 14px;
+        margin-right: 2px;
+        margin-top: 48px;
+    }
+
+}
+@media screen and (min-width: 341px) and (max-width: 410px){
+
+}
+@media screen  and (min-width: 411px){
+
+}

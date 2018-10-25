@@ -1,0 +1,116 @@
+body{
+    background: RGB(245, 245, 245);
+}
+.top{
+    float: left;
+    width: 100%;
+    background: url("../../../../../resources/images/weChat/receipt/bg@3x.png") no-repeat center RGB(0, 178, 172);
+    background-size: contain;
+    padding-bottom: 30px;
+}
+.instruction{
+    float: right;
+    width: 50%;
+    padding: 4px 3%;
+    color: #ffffff;
+    text-align: right;
+    font-size: 12px;
+    text-decoration: underline;
+    line-height: 22px;
+}
+.top_text_big{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 10px;
+}
+.top_text_small{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+.content{
+    float: left;
+    width: 100%;
+    background: RGB(245, 245, 245);
+    border-radius: 6px;
+    margin-top: -6px;
+}
+.content_top{
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    color: #333333;
+    text-align: center;
+    line-height: 35px;
+    padding: 10px 0 5px 0;
+}
+.content_input{
+    float: left;
+    width: 94%;
+    margin: 5px 3%;
+    border-radius: 3px;
+    background: #ffffff;
+    height: 60px;
+}
+.content_input div{
+    float: left;
+    width: 4px;
+    height: 20px;
+    margin-top: 20px;
+    background: RGB(0, 178, 172);
+}
+.content_input_optional div{
+    background: RGB(229, 229, 229);
+}
+.content_input input{
+    float: left;
+    width: 85%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 15px 5%;
+}
+.content_optional{
+    float: left;
+    width: 94%;
+    margin: 15px 3%;
+}
+.content_optional img{
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+}
+.content_optional div{
+    float: left;
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 5px;
+    color: #333333;
+}
+.content_input_hidden{
+    float: left;
+    width: 100%;
+    display: none;
+}
+.apply_button{
+    float: left;
+    width: 60%;
+    margin: 20px 20%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    background: RGB(0, 178, 172);
+}

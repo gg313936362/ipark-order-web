@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug" monitorInterval="30">
+	<Properties>
+        <Property name="DETAIL_LOG_NAME">${DETAIL_LOG_NAME}</Property>
+        <Property name="ERROR_LOG_NAME">${ERROR_LOG_NAME}</Property>
+        <Property name="LOG_HOME">${LOG_HOME}</Property>
+        <Property name="DETAIL_LOG_COUNT">${DETAIL_LOG_COUNT}</Property>
+        <Property name="ERROR_LOG_COUNT">${ERROR_LOG_COUNT}</Property>
+    </Properties>
+      
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %class{36}#%M [line:%L] - %msg%xEx%n" />
+		</Console>
+
+		<RollingFile name="DetailLog" filename="${LOG_HOME}/${DETAIL_LOG_NAME}.log" filepattern="${LOG_HOME}/${DETAIL_LOG_NAME}-%d{yyyy-MM-dd}-%i.log.zip">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %class{36}#%M [line:%L] - %msg%xEx%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="${DETAIL_LOG_COUNT}" />
+		</RollingFile>
+
+		<RollingFile name="ErrorLog" fileName="${LOG_HOME}/${ERROR_LOG_NAME}.log" filePattern="${LOG_HOME}/${ERROR_LOG_NAME}.%d{yyyy-MM-dd}.%i.log">
+			<ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %class{36}#%M [line:%L] - %msg%xEx%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="${ERROR_LOG_COUNT}" />
+		</RollingFile>
+	</Appenders>
+ 	
+	<Loggers>
+		<logger name="org.mybatis.spring.SqlSessionUtils" level="debug"></logger>
+	    <!-- 输出带参数值的SQL语句 -->
+	    <logger name="log4jdbc.log4j2" level="debug" additivity="false">
+		    <MarkerFilter marker="LOG4JDBC_NON_STATEMENT" onMatch="DENY" onMismatch="NEUTRAL" />
+			<appender-ref ref="console" />
+		</logger>
+
+		<Root level="all">
+			<AppenderRef ref="Console" level="debug"/>
+			<AppenderRef ref="DetailLog" level="info"/>
+			<AppenderRef ref="ErrorLog" level="error"/>
+		</Root>
+	</Loggers>
+</Configuration>
