@@ -44,7 +44,7 @@
     <div class="submit_button" onclick="register(this);">注册</div>
     <div class="bottom_div">
       <a class="login_a" href="javascript: forwardLogin();">登录</a>
-      <div class="xieyi">注册代表你同意<a href="${contextPath}/html/document/user_agreement.html?2017120501">《捷停用户协议》</a></div>
+      <div class="xieyi">注册代表你同意<a href="${contextPath}/html/document/user_agreement.html?2017120501">《捷惠用户协议》</a></div>
     </div>
   </div>
 </body>

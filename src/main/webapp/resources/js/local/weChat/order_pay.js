@@ -44,7 +44,7 @@ function initSelectPayWay(){
     var realPayAmt = parseFloat($("#realPayAmt").val());
     var balance =  parseFloat($("#balance").val());
     var platType = getCookie('platType');
-    if (platType == 1){//微信支付
+    if (platType == 1 || platType == 3){//微信支付
         $(".pay_way_ali").css("display", "none");
     }
     if (platType == 2){//支付宝支付
@@ -55,7 +55,7 @@ function initSelectPayWay(){
         $(".pay_way_balance .pay_way_line_img").attr("src", contextPath + "/resources/images/weChat/order_pay/pic_payment_balance@3x.png");
         $(".pay_way_balance div span").css("color", "RGB(99, 99, 99)");
         $(".pay_way_balance .pay_way_line_seled_img").attr("src", contextPath + "/resources/images/weChat/order_pay/payment_ring_gray@3x.png");
-        if (platType == 1){//微信支付
+        if (platType == 1 || platType == 3){//微信支付
             selectPayWay($(".pay_way_wechat").get(0), 5);
         }
         if (platType == 2){//支付宝支付

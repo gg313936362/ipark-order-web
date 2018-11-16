@@ -20,7 +20,7 @@
 <body>
   <input type="hidden" value="${contextPath}" id="contextPath">
   <div class="need_content">
-    <div class="need_tips">请填写你的停车需求，捷停帮您找车位</div>
+    <div class="need_tips">请填写你的停车需求，捷惠帮您找车位</div>
     <div class="input_div_wrapper">
       <div class="input_div">
         <div>停车地点</div>

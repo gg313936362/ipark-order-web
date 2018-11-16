@@ -50,7 +50,7 @@ function submitNeed(obj){
             if (result.resCode == '000000') {
                 $("body").alertDialog({
                     title: "提示",
-                    text: "需求已提交<br>如有合适的车位，<br>捷停将第一时间通知您"
+                    text: "需求已提交<br>如有合适的车位，<br>捷惠将第一时间通知您"
                 });
             } else {
                 $("body").alertDialog({

@@ -74,7 +74,7 @@
             <div class="park_detail">
               <img class="park_detail_no_img" src="${contextPath}/resources/images/weChat/homepage/pic4@3x.png">
               <div class="park_detail_no_tips">
-                <c:if test="${park.parkingInfo == null}">您未驶入捷停停车场</c:if>
+                <c:if test="${park.parkingInfo == null}">您未驶入捷惠停车场</c:if>
                 <c:if test="${park.parkingInfo.status == 4}">无法找到停车场对应的<br>计费脚本</c:if>
                 <c:if test="${park.parkingInfo.status == 5}">本停车场不支持<br>电子支付</c:if>
                 <c:if test="${park.parkingInfo.status == 6}">您已驶入包月停车场</c:if>

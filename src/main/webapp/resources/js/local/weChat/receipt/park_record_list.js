@@ -60,7 +60,7 @@ function getRecord(type){
                         "<img src='" + contextPath + "/resources/images/weChat/receipt/pic_discount_unavailable@3x.png'>" +
                         "</div>" +
                         "<div class='order_none_text'>您没有可开发票的行程</div>" +
-                        "<div class='order_none_text1'>说明：尊敬的车主您好，捷停增值税电子发票已在部分停车场上线了，还有部分场库需直接向场库方索取发票，谢谢</div>" +
+                        "<div class='order_none_text1'>说明：尊敬的车主您好，捷惠增值税电子发票已在部分停车场上线了，还有部分场库需直接向场库方索取发票，谢谢</div>" +
                         "</li>");
                     wrapper.refresh();
                     return;

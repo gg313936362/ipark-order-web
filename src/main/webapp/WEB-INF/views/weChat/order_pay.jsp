@@ -18,7 +18,7 @@
   <script type="text/javascript" src="${contextPath}/resources/js/lib/weixin/jweixin_1.0.0.js"></script>
   <script type="text/javascript" src="${contextPath}/resources/js/local/common/base.js"></script>
   <script type="text/javascript" src="${contextPath}/resources/js/lib/wap_show_tools/wap_show_tools.js"></script>
-  <script type="text/javascript" src="${contextPath}/resources/js/local/weChat/order_pay.js?2017071001"></script>
+  <script type="text/javascript" src="${contextPath}/resources/js/local/weChat/order_pay.js?201707100100"></script>
 </head>
 <body>
   <input type="hidden" value="${contextPath}" id="contextPath">
@@ -40,7 +40,7 @@
   </div>
   <div class="div_title">优惠券</div>
   <div class="order_coupon" <c:if test="${result.maxCouponsId != 0}">onclick="openCoupon();" </c:if>>
-    <div class="order_coupon_left">捷停优惠券</div>
+    <div class="order_coupon_left">捷惠优惠券</div>
     <c:if test="${result.maxCouponsId == 0}"><div class="order_coupon_right">暂无优惠券</div></c:if>
     <c:if test="${result.maxCouponsId != 0}">
       <img src="${contextPath}/resources/images/weChat/order_pay/arrow_walletlist@3x.png">

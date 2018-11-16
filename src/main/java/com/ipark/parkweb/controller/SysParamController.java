@@ -50,7 +50,7 @@ public class SysParamController extends BaseController {
                 if (platType == Constants.webSourcePlatType.WE_CHAT_PLAT || platType == Constants.webSourcePlatType.WE_CHAT_MYSELF_OPENID_PLAT) {
                     wechatUtilsMap.put((int) data.get("type"), new WeChatUtils(data.get("wechatAppId").toString(),
                             data.get("wechatAppSecret").toString()));
-                } else if (platType == Constants.webSourcePlatType.ALIPAY_PLAT){// TODO: 2017/2/14 暂时只做捷停自己生活号，接入多加生活号的话需要传递该生活号的具体参数
+                } else if (platType == Constants.webSourcePlatType.ALIPAY_PLAT){// TODO: 2017/2/14 暂时只做捷惠自己生活号，接入多加生活号的话需要传递该生活号的具体参数
 
                 }
             }

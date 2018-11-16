@@ -28,7 +28,7 @@ function setTitle(){
     } else if (getCookie('webSourceType') == 7){//如果振华
         document.title = '振华智停';
     } else {
-        document.title = '捷停';
+        document.title = '捷惠';
     }
 }
 

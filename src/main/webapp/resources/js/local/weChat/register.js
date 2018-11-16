@@ -114,7 +114,7 @@ function register(obj){
     if (openid == undefined || openid == '' || openid == null || openid == 'null'){
         $("body").alertDialog({
             title: "提示",
-            text: "未获取openid，请先关注‘捷停’公众号"
+            text: "未获取openid，请先关注‘捷惠’公众号"
         });
         return;
     }

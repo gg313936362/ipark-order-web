@@ -85,7 +85,7 @@
     </div>
   </c:if>
   <div class="pay_line">
-    <div class="pay_line_left">捷停服务费</div>
+    <div class="pay_line_left">捷惠服务费</div>
     <div class="pay_line_right">${parkingInfo.serviceFee}元</div>
   </div>
   <div class="pay_line" <c:if test="${parkingInfo.maxCouponsId != 0}">onclick="openCoupon();"</c:if>>
